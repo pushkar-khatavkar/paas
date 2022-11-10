@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>News App</title>
+    </head>
+    <body bgcolor="#D3D3D3">
+        <h1>News App</h1>
+        <div>
+            <br>
+            <br>
+            {% for i in case.articles %}
+            <hr>
+            <div>
+            <h5>Author: {{i.author}}</h4>
+            <h4>Title: {{i.title}}</h5>
+            <h5>Description: {{i.description}}</h6>
+            <br>
+            <img src = {{i.urlToImage}} />
+            </div>
+            <hr>
+            {% endfor %}
+            
+        </div>
+    </body>
+<html>
+
